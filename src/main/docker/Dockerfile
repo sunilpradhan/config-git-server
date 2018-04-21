@@ -11,7 +11,7 @@ VOLUME /tmp
 # Add the application's jar to the container
 ADD config-git-server-0.0.1-SNAPSHOT.jar config-git-server.jar
 
-RUN bash -c 'touch /config-git-server'
+RUN bash -c 'touch /config-git-server.jar'
 # Run the jar file 
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/config-git-server.jar"]
 
