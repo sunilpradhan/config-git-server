@@ -16,3 +16,4 @@ RUN bash -c 'touch /config-git-server.jar'
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/config-git-server.jar"]
 
 EXPOSE 8080
+EXPOSE 443
